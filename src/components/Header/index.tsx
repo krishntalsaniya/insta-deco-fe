@@ -77,9 +77,8 @@ const Header = () => {
                   {/* <CustomSelect options={options} /> */}
 
                   <div className="relative max-w-[333px] sm:min-w-[333px] w-full">
-                    {/* <!-- divider --> */}
-                    {/* <span className="absolute left-0 top-1/2 -translate-y-1/2 inline-block w-px h-5.5 bg-gray-4"></span> */}
-                    {/* <input
+                    <span className="absolute left-0 top-1/2 -translate-y-1/2 inline-block w-px h-5.5 bg-gray-4"></span>
+                    <input
                       onChange={(e) => setSearchQuery(e.target.value)}
                       value={searchQuery}
                       type="search"
@@ -88,9 +87,9 @@ const Header = () => {
                       placeholder="I am shopping for..."
                       autoComplete="off"
                       className="custom-search w-full rounded-r-[5px] bg-gray-1 !border-l-0 border border-gray-3 py-2.5 pl-4 pr-10 outline-none ease-in duration-200"
-                    /> */}
+                    />
 
-                    {/* <button
+                    <button
                       id="search-btn"
                       aria-label="Search"
                       className="flex items-center justify-center absolute right-3 top-1/2 -translate-y-1/2 ease-in duration-200 hover:text-blue"
@@ -108,7 +107,7 @@ const Header = () => {
                           fill=""
                         />
                       </svg>
-                    </button> */}
+                    </button>
                   </div>
                 </div>
               </form>
@@ -117,7 +116,7 @@ const Header = () => {
 
           {/* <!-- header top right --> */}
           <div className="flex w-full lg:w-auto items-center gap-7.5">
-            <div className="hidden xl:flex items-center gap-3.5">
+            {/* <div className="hidden xl:flex items-center gap-3.5">
               <svg
                 width="24"
                 height="24"
@@ -151,7 +150,7 @@ const Header = () => {
                   12345-6789
                 </p>
               </div>
-            </div>
+            </div> */}
 
             <div className="flex w-full lg:w-auto justify-between items-center gap-5">
               <div className="flex items-center gap-5">
@@ -283,7 +282,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* <div className="border-t border-gray-3">
+      <div className="border-t border-gray-3">
         <div className="max-w-[1170px] mx-auto px-4 sm:px-7.5 xl:px-0">
           <div className="flex items-center justify-between">
             <div
@@ -323,7 +322,7 @@ const Header = () => {
 
             <div className="hidden xl:block">
               <ul className="flex items-center gap-5.5">
-                <li className="py-4">
+                {/* <li className="py-4">
                   <a
                     href="#"
                     className="flex items-center gap-1.5 font-medium text-custom-sm text-dark hover:text-blue"
@@ -347,7 +346,7 @@ const Header = () => {
                     </svg>
                     Recently Viewed
                   </a>
-                </li>
+                </li> */}
 
                 <li className="py-4">
                   <Link
@@ -374,7 +373,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </header>
   );
 };
